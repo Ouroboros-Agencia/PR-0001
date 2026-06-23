@@ -8,7 +8,8 @@
     "logo:transparent": "node scripts/remove-logo-background.mjs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "pnpm build && gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",
