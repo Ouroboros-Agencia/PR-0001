@@ -3,13 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://tuamigosacha.com",
+  "packageManager": "pnpm@11.1.1",
   "scripts": {
     "dev": "vite",
     "logo:transparent": "node scripts/remove-logo-background.mjs",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/prepare-github-pages.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "pnpm build && gh-pages -d dist -b gh-pages"
+    "deploy": "pnpm run build && gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",

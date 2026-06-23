@@ -16,12 +16,13 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base: '/PR-0001/',
+  base: '/',
   server: {
-    host: '/',
+    host: '127.0.0.1',
     headers: securityHeaders,
   },
   preview: {
+    host: '127.0.0.1',
     headers: securityHeaders,
   },
 })
