@@ -7,13 +7,13 @@ export function MediaRepositorySection() {
     <section className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="Repositorio"
-          title="Fotos, videos y piezas de trabajo"
-          description="Un espacio ordenado para mostrar actividades, recorridos, propuestas visuales y contenido publicado."
+          eyebrow="Resultados"
+          title="Trabajo territorial en fotos y videos"
+          description="Un registro ordenado de recorridos, actividades, comités de apoyo y presencia directa con vecinos de Huancán."
           align="center"
         />
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {mediaRepository.map((item) => (
             <MediaCard
               key={item.id}

@@ -36,7 +36,7 @@ export function ProposalCard({ proposal, compact = false }: ProposalCardProps) {
           {proposal.number}
         </span>
       </div>
-      <h3 className="mt-5 text-xl font-black text-slate-950">{proposal.title}</h3>
+      <h3 className="mt-5 text-lg font-black text-slate-950">{proposal.title}</h3>
       <p className="mt-3 text-sm leading-6 text-slate-600">{proposal.summary}</p>
 
       {!compact ? (

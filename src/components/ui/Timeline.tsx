@@ -43,7 +43,7 @@ export function Timeline({ items, backgroundImage, backgroundAlt, year }: Timeli
       <div className="relative z-10 flex min-h-screen flex-col px-5 py-8 sm:px-8 lg:p-10">
         <div className="max-w-2xl">
           <p className="text-sm font-black uppercase text-blue-200">Cronología</p>
-          <h3 className="mt-3 text-3xl font-black sm:text-4xl">
+          <h3 className="mt-3 text-2xl font-black sm:text-3xl">
             Trayectoria de vida y gestión
           </h3>
         </div>
@@ -80,7 +80,7 @@ export function Timeline({ items, backgroundImage, backgroundAlt, year }: Timeli
         </div>
 
         <div className="relative mt-12 hidden flex-1 lg:block">
-          <div className="absolute left-0 top-20 select-none text-[9rem] font-black leading-[0.82] text-white/20">
+          <div className="absolute left-0 top-20 select-none text-[6rem] font-black leading-[0.82] text-white/20">
             <span className="block">{yearParts[0]}</span>
             <span className="block">{yearParts[1]}</span>
           </div>
@@ -145,7 +145,7 @@ export function Timeline({ items, backgroundImage, backgroundAlt, year }: Timeli
 
         <article className="mt-8 max-w-3xl rounded-md border border-white/15 bg-white/95 p-6 text-slate-950 shadow-2xl lg:absolute lg:bottom-10 lg:left-72 lg:right-10 lg:mt-0">
           <p className="text-sm font-black uppercase text-blue-700">{activeItem.period}</p>
-          <h4 className="mt-2 text-2xl font-black">{activeItem.title}</h4>
+          <h4 className="mt-2 text-xl font-black">{activeItem.title}</h4>
           <p className="mt-3 text-sm leading-6 text-slate-700">{activeItem.description}</p>
         </article>
       </div>

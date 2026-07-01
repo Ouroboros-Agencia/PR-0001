@@ -22,7 +22,7 @@ export function MediaCard({ title, type, description, image, url }: MediaCardPro
       />
       <div className="p-5">
         <p className="text-xs font-bold uppercase text-red-600">{type}</p>
-        <h3 className="mt-2 text-xl font-black text-slate-950">{title}</h3>
+        <h3 className="mt-2 text-lg font-black text-slate-950">{title}</h3>
         <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
         {url ? (
           <div className="mt-5">

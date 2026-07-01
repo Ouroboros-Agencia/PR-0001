@@ -1,15 +1,23 @@
 import logoImage from '../assets/images/alianza-progreso-logo.png'
 import headerPortraitImage from '../assets/images/IMG_6837-header.png'
 import portraitImage from '../assets/images/IMG_6837.JPG.jpeg'
-import candidateImage from '../assets/images/IMG_6705.JPG.jpeg'
-import valleyImage from '../assets/images/IMG_6706.JPG.jpeg'
-import bridgeImage from '../assets/images/IMG_7546.JPG.jpeg'
-import communityImage from '../assets/images/IMG_7559.JPG.jpeg'
+import candidateImage from '../assets/images/Imagenes Vertical/4.jpg'
+import valleyImage from '../assets/images/Imagenes horizontal/6.jpg'
+import bellsImage from '../assets/images/Imagenes horizontal/1.jpg'
+import committeeImage from '../assets/images/Imagenes horizontal/2.jpg'
+import fieldImage from '../assets/images/Imagenes horizontal/3.jpg'
+import celebrationImage from '../assets/images/Imagenes horizontal/4.jpg'
+import neighborsImage from '../assets/images/Imagenes horizontal/5.jpg'
+import supportImage from '../assets/images/Imagenes Vertical/1.jpg'
+import elderImage from '../assets/images/Imagenes Vertical/2.jpg'
+import greetingImage from '../assets/images/Imagenes Vertical/3.jpg'
+import walkImage from '../assets/images/Imagenes Vertical/5.jpg'
+import teamworkImage from '../assets/images/Imagenes Vertical/9.jpg'
 
 export const siteRoutes = [
   { path: '/', label: 'Inicio' },
-  { path: '/propuestas', label: 'Propuestas específicas' },
-  { path: '/repositorio', label: 'Fotos y videos' },
+  { path: '/propuestas', label: 'Propuestas' },
+  { path: '/repositorio', label: 'Resultados' },
 ] as const
 
 export const candidate = {
@@ -31,8 +39,8 @@ export const candidate = {
 }
 
 export const heroVisual = {
-  src: valleyImage,
-  alt: 'Sacha observando el valle de Huancán',
+  src: celebrationImage,
+  alt: 'Sacha participando junto a los vecinos de Huancán',
 }
 
 export const candidatePhoto = {
@@ -41,8 +49,8 @@ export const candidatePhoto = {
 }
 
 export const profileVisual = {
-  src: portraitImage,
-  alt: 'Retrato de Sacha',
+  src: greetingImage,
+  alt: 'Sacha compartiendo con los vecinos de Huancán',
 }
 
 export const credentials = [
@@ -238,18 +246,60 @@ export const timelineVisual = {
 
 export const mediaRepository = [
   {
-    id: 'puente',
+    id: 'campanas',
     type: 'Actividad',
-    title: 'Actividad en puente',
-    description: 'Registro de trabajo y presencia en espacios públicos del distrito.',
-    image: bridgeImage,
+    title: 'Presencia en espacios tradicionales',
+    description: 'Recorrido territorial y registro de identidad local junto a vecinos.',
+    image: bellsImage,
   },
   {
-    id: 'comunidad',
-    type: 'Actividad',
-    title: 'Trabajo con vecinos',
-    description: 'Registro de recorridos, reuniones y actividades en barrios de Huancán.',
-    image: communityImage,
+    id: 'comite',
+    type: 'Organización',
+    title: 'Comité de apoyo',
+    description: 'Trabajo organizado con equipos y vecinos comprometidos con el distrito.',
+    image: committeeImage,
+  },
+  {
+    id: 'campo',
+    type: 'Territorio',
+    title: 'Trabajo en campo',
+    description: 'Recorridos en zonas altas para escuchar necesidades y planificar soluciones.',
+    image: fieldImage,
+  },
+  {
+    id: 'celebracion',
+    type: 'Comunidad',
+    title: 'Participación en actividades locales',
+    description: 'Acompañamiento a tradiciones, organizaciones y espacios de encuentro vecinal.',
+    image: celebrationImage,
+  },
+  {
+    id: 'vecinos',
+    type: 'Vecinos',
+    title: 'Cercanía con familias',
+    description: 'Jornadas de escucha y presencia en barrios con madres, niñas y adultos mayores.',
+    image: neighborsImage,
+  },
+  {
+    id: 'ninez',
+    type: 'Familias',
+    title: 'Contacto directo con la niñez',
+    description: 'Actividades de cercanía con familias y niños de diferentes sectores.',
+    image: supportImage,
+  },
+  {
+    id: 'adulto-mayor',
+    type: 'Vecinos',
+    title: 'Escucha a adultos mayores',
+    description: 'Encuentros personales para recoger prioridades y necesidades reales.',
+    image: elderImage,
+  },
+  {
+    id: 'saludo',
+    type: 'Recorrido',
+    title: 'Recorridos barrio por barrio',
+    description: 'Presencia en calles y zonas vecinales para fortalecer confianza y diálogo.',
+    image: greetingImage,
   },
   {
     id: 'miravalle',
@@ -270,14 +320,28 @@ export const mediaRepository = [
     type: 'Perfil',
     title: 'Retrato del candidato',
     description: 'Imagen personal para piezas de presentación, perfil y difusión pública.',
-    image: profileVisual.src,
+    image: portraitImage,
+  },
+  {
+    id: 'camino',
+    type: 'Territorio',
+    title: 'Equipo en ruta',
+    description: 'Caminatas de trabajo territorial para llegar a cada zona del distrito.',
+    image: walkImage,
+  },
+  {
+    id: 'faena',
+    type: 'Resultados',
+    title: 'Coordinación en faenas',
+    description: 'Acompañamiento a vecinos en trabajos y actividades comunitarias.',
+    image: teamworkImage,
   },
   {
     id: 'tiktok',
     type: 'Video',
     title: 'Contenido en TikTok',
     description: 'Repositorio externo con videos de actividades y mensajes públicos.',
-    image: bridgeImage,
+    image: bellsImage,
     url: candidate.tiktokUrl,
   },
 ]
